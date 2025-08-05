@@ -27,8 +27,8 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section id="about"><About /></section>
-        <section id="services"><Services /></section>
+        <About />
+        <Services />
         <Footer />
       </main>
     </div>
