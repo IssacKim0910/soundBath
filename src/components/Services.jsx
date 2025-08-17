@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 export default function Services() {
   return (
     // Services 섹션 전체 컨테이너
@@ -78,12 +80,13 @@ export default function Services() {
                 개인 맞춤형으로 진행되는 프라이빗 세션입니다. 더 깊은 이완과 치유를 경험하고 싶은 분들께 추천합니다.
               </p>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSc4bpEagy4dHOwtDw8OJ488d-M3rpsCu8rMq5zZwykxkBbfBg/viewform?usp=sharing&ouid=110150425719035502089"
-                target="_blank"
+                // href=""
+                // target="_blank"
                 className="inline-block bg-teal-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-teal-600 transition-colors duration-300"
               >
                 문의하기
               </a>
+              <Button />
             </div>
           </div>
 

@@ -7,6 +7,10 @@ import Sidebar from './components/Sidebar'
 import SidebarToggle from './components/SidebarToggle'
 import Instructor from './components/Instructor';
 import Card from "./components/Card";
+import Button from "./components/Button";
+import OnChange from "./components/OnChange";
+import StateCom from './components/StateCom';
+import taJpg from './assets/ta.jpg';
 
 // App 컴포넌트: 애플리케이션의 최상위 컴포넌트
 export default function App() {
@@ -25,19 +29,16 @@ export default function App() {
             <Sidebar isOpen={isSidebarOpen} onClose={() => setSidebarOpen(false)}/>
 
             {/* 메인 컨텐츠 영역 */}
-            {/* // overflow-x-hidden: 가로 스크롤바가 생기지 않도록 함 */}
             <main className="overflow-x-hidden">
-                {/* react-router-dom을 사용한 페이지 라우팅 설정 */}
                 <Routes>
-                    {/* 기본 경로("/")에 대한 라우트 */}
                     <Route path="/" element={
-                        // 여러 컴포넌트를 묶어서 렌더링하기 위한 Fragment
                         <>
-                            {/* 히어로 섹션 (메인 페이지의 가장 첫 화면) */}
                             <section
                                 id="hero"
                                 className="relative h-screen text-white bg-cover bg-center"
-                                style={{backgroundImage: "url('/images/test.jpg')"}}>
+                                style={{
+                                    backgroundImage: `url(${taJpg})`
+                            }}>
                                 {/* 배경 이미지 위에 겹치는 어두운 오버레이 */}
                                 {/* // absolute: 부모(section)를 기준으로 위치를 잡음
                   // inset-0: top, right, bottom, left를 모두 0으로 설정하여 부모를 꽉 채움
@@ -51,8 +52,8 @@ export default function App() {
                   // h-full: 높이를 부모(section)와 같게 설정 */}
                                 <div className="relative z-20 flex items-center justify-center h-full">
                                     <div className="text-center px-4">
-                                        <h1 className="text-4xl md:text-6xl font-bold mb-4">Healing, Sound</h1>
-                                        <p className="text-2xl md:text-3xl lg:text-4xl"> - - </p>
+                                        <h1 className="text-4xl md:text-6xl font-bold mb-4">Heal, Sound</h1>
+                                        <p className="text-2xl md:text-3xl lg:text-4xl"> -company name - </p>
                                     </div>
                                 </div>
                             </section>
