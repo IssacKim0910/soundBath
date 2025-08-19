@@ -10,7 +10,7 @@ import taJpg from './assets/ta.jpg';
 import logoJpg from './assets/logo.jpg';
 
 const ScrollSnapWrapper = () => (
-    <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
+    <div className="snap-y snap-mandatory h-screen overflow-y-scroll no-scrollbar">
         <div className="snap-start h-screen">
             <section
                 id="hero"
