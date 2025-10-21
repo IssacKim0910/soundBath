@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
-import { servicesData, soundBathHistoryData } from '../data';
+import { servicesData, soundBathHistoryData, sensoryClassHistoryData } from '../data';
+
 
 export default function ServiceDetail() {
   const { slug } = useParams();
@@ -28,15 +29,15 @@ export default function ServiceDetail() {
       <div className="max-w-4xl mx-auto p-8 pt-24">
         <Link to="/services" className="text-amber-400 hover:text-amber-300 transition-colors mb-8 inline-block">← Back to Services</Link>
         <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif">{service.title}</h1>
-        
+
         {videoId ? (
           <div className="relative overflow-hidden pt-[56.25%] mb-8 rounded-lg shadow-2xl">
-            <iframe 
+            <iframe
               className="absolute top-0 left-0 w-full h-full"
               src={`https://www.youtube.com/embed/${videoId}`}
               title="YouTube video player"
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
           </div>
@@ -45,17 +46,17 @@ export default function ServiceDetail() {
         )}
 
         <div className="space-y-4">
-        {Array.isArray(service.description) ? (
-          service.description.map((paragraph, index) => (
-            <p key={index} className="text-xl text-gray-300 leading-relaxed">
-              {paragraph}
+          {Array.isArray(service.description) ? (
+            service.description.map((paragraph, index) => (
+              <p key={index} className="text-xl text-gray-300 leading-relaxed">
+                {paragraph}
+              </p>
+            ))
+          ) : (
+            <p className="text-xl text-gray-300 leading-relaxed">
+              {service.description}
             </p>
-          ))
-        ) : (
-          <p className="text-xl text-gray-300 leading-relaxed">
-            {service.description}
-          </p>
-        )}
+          )}
         </div>
 
         {service.features && (
@@ -99,7 +100,27 @@ export default function ServiceDetail() {
           </div>
         )}
 
-        {service.slug !== 'sound-bath' && (
+        {slug === 'coffee-class' && (
+          <div className="mt-20 pt-10 border-t border-gray-800">
+            <h2 className="text-4xl font-bold text-center mb-12 font-serif">지난 센서리 클래스</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {sensoryClassHistoryData.map((session) => (
+                <Link to={`/sensory-class/${session.id}`} key={session.id} className="block group">
+                  <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform group-hover:-translate-y-2 transition-transform duration-300">
+                    <img src={session.image} alt={session.title} className="w-full h-48 object-cover" />
+                    <div className="p-6">
+                      <p className="text-sm text-amber-400 mb-1">{session.date}</p>
+                      <h3 className="text-xl font-bold text-white mb-2">{session.title}</h3>
+                      <p className="text-gray-400 text-base">{session.description}</p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {service.slug !== 'sound-bath' && service.slug !== 'coffee-class' && (
           <div className="mt-16 text-center">
             <Link to="/contact" className="bg-amber-500 text-black font-bold py-3 px-8 rounded-full hover:bg-amber-400 transition-transform duration-300 inline-block">
               교육 문의하기

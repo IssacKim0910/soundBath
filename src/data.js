@@ -19,29 +19,28 @@ export const servicesData = [
   {
     slug: 'coffee-class',
     title: '센서리 클래스',
-    image: 'https://placehold.co/1200x800/4A4A4A/FFFFFF/png?text=Coffee+Class',
+    image: '../src/assets/sensoryThum.jpg',
     description: [
       '전문 바리스타가 기업의 특성과 니즈에 맞춰 설계한 맞춤형 커피 교육 프로그램을 제공합니다.',
       '임직원 복지, 팀 빌딩, 고객 대상 이벤트 등 다양한 목적에 맞춰 최고의 커피 경험을 선사합니다.'
     ],
     features: [
-      '기업별 니즈를 반영한 맞춤형 커리큘럼',
-      '경험 많은 전문 바리스타 강사진',
-      '최상급 스페셜티 원두 및 전문 장비 제공',
-      '원하는 장소와 시간에 맞춰 진행 가능'
+      '원두 1종마다 향미-시음-기록을 체계적으로 반복',
+      '참여형 루틴을 통해 몰입도 극대화',
+      '스스로 취향을 찾아가는 주체적인 시간'
     ],
     curriculum: [
-      '커피의 역사와 스페셜티 원두의 이해',
-      '에스프레소 추출 및 다양한 브루잉 실습',
-      '우유 스티밍 및 기본 라떼 아트',
-      '나만의 시그니처 메뉴 만들기'
+      '사전교육 (15분 - 센서리 개념과 표현 방법을 교육)',
+      '원두별 5단계 체험 (60분 - 향미체험, 시음, 센서리카드 작성)',
+      '취향정리 (15분)',
+      '마무리 & 선물 (참가자가 선택한 원두의 드립백 제공)'
     ]
   },
   {
-    slug: 'space-rental',
+    slug: 'Spotlight-Band',
     title: '밴드',
-    image: 'https://placehold.co/1200x800/585858/FFFFFF/png?text=Space+Rental',
-    description: '스포트라이트만의 특별한 밴드'
+    image: 'https://placehold.co/1200x800/585858/FFFFFF/png?text=Spotlight-Band',
+    description: ['Spotlight Band는 국악, 재즈, 클래식, 실용음악 등 서로 다른 장르의 아티스트들이 모여', '새로운 사운드를 창조하는 크로스오버 밴드입니다.'],
   },
   {
     slug: 'events',
@@ -76,4 +75,19 @@ export const soundBathHistoryData = [
 ];
 
 
-// export const exhibitionsData = [
+export const sensoryClassHistoryData = [
+  {
+    id: 'sc-250821',
+    title: '담양군 다문화지원센터',
+    date: '2025.08.21',
+    image: '../src/assets/sensory/dy.JPG',
+    description: '담양군 다문화 지원센터에서 다양한 원두를 맛보고 경험하는 시간을 가졌습니다'
+  },
+  {
+    id: 'sc-2024-04',
+    title: '봄의 향기를 담은 커피',
+    date: '2024.04.15',
+    image: '../src/assets/sensoryThum.JPG',
+    description: '꽃향기가 가득한 에티오피아 원두를 중심으로 다양한 커피의 아로마를 탐험했습니다.'
+  },
+];

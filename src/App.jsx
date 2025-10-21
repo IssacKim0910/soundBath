@@ -9,6 +9,7 @@ import ServiceDetail from './components/ServiceDetail';
 import ExhibitionListPage from './components/ExhibitionListPage';
 import ExhibitionDetailPage from './components/ExhibitionDetailPage';
 import SoundBathDetail from './components/SoundBathDetail';
+import SensoryClassDetail from './components/SensoryClassDetail';
 import taJpg from './assets/ta.jpg';
 
 import WhySpotlight from './components/WhySpotlight';
@@ -68,10 +69,10 @@ export default function App() {
                     <Route path="/exhibitions" element={<ExhibitionListPage />} />
                     <Route path="/exhibitions/:id" element={<ExhibitionDetailPage />} />
                     <Route path="/sound-bath/:id" element={<SoundBathDetail />} />
+                    <Route path="/sensory-class/:id" element={<SensoryClassDetail />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
             </main>
         </div>
     );
 }
-

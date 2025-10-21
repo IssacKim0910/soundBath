@@ -36,7 +36,9 @@ export default function Header({ isScrolled }) {
 
           {/* Centered Title (Desktop) */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:block">
-            <h1 className="text-white text-2xl font-serif">SpotLight Coffee</h1>
+            <Link to="/" className="text-white text-2xl font-serif hover:text-gray-200 transition-colors">
+              <h1>SpotLight Coffee</h1>
+            </Link>
           </div>
 
           {/* Desktop Navigation Links */}

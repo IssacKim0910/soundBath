@@ -28,7 +28,7 @@ export default function Services({ isHomepage = false }) {
       {isHomepage && (
         <div className="mt-16">
           <Link to="/services" className="bg-amber-500 text-black font-bold py-3 px-8 rounded-full hover:bg-amber-400 transition-transform duration-300 inline-block">
-            모든 서비스 보기
+            전체 서비스
           </Link>
         </div>
       )}
