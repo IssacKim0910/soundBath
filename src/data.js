@@ -2,7 +2,7 @@ export const servicesData = [
   {
     slug: 'sound-bath',
     title: '사운드배스',
-    image: '../src/assets/events/soundBathThum.jpg',
+    image: '/images/events/soundBathThum.JPG',
     description: [
       '사운드배스(Sound Bath)는 전통 울림 악기의 깊은 공명으로',
       `몸과 마음을 '소리로 목욕하듯' 씻어내는 힐링 프로그램입니다.`,
@@ -12,14 +12,14 @@ export const servicesData = [
   {
     slug: 'exhibition',
     title: '전시',
-    image: '../src/assets/exhibitions/exhibThum.jpg',
+    image: '/images/exhibitions/exhibThum.JPG',
     link: '/exhibitions', // Special link for this card
     description: 'Our space transforms to host rotating exhibitions from local and international artists. Discover new perspectives with every cup.'
   },
   {
     slug: 'coffee-class',
     title: '센서리 클래스',
-    image: '../src/assets/sensoryThum.jpg',
+    image: '/images/sensoryThum.JPG',
     description: [
       '전문 바리스타가 기업의 특성과 니즈에 맞춰 설계한 맞춤형 커피 교육 프로그램을 제공합니다.',
       '임직원 복지, 팀 빌딩, 고객 대상 이벤트 등 다양한 목적에 맞춰 최고의 커피 경험을 선사합니다.'
@@ -55,21 +55,21 @@ export const soundBathHistoryData = [
     id: 'sb-2024-08',
     title: '여름밤의 사운드배스',
     date: '2024.08.15',
-    image: '../src/assets/night.jpg',
+    image: '/images/night.jpg',
     description: '한여름 밤, 시원한 공간에서 진행된 사운드배스 세션입니다.'
   },
   {
     id: 'sb-2023-09',
     title: '봄의 소리, 마음의 울림',
     date: '2023.09.27',
-    image: '../src/assets/soundBath/sb230927.jpg',
+    image: '/images/soundBath/sb230927.jpg',
     description: '새로운 시작을 응원하는 봄 시즌 특별 사운드배스입니다.'
   },
   {
     id: 'sb-2024-02',
     title: '겨울의 끝, 새로운 시작',
     date: '2023.10.03',
-    image: '../src/assets/soundBath/sb231003.jpg',
+    image: '/images/soundBath/sb231003.JPG',
     description: '겨우내 움츠렸던 몸과 마음을 깨우는 시간을 가졌습니다.'
   },
 ];
@@ -80,14 +80,14 @@ export const sensoryClassHistoryData = [
     id: 'sc-250821',
     title: '담양군 다문화지원센터',
     date: '2025.08.21',
-    image: '../src/assets/sensory/dy.JPG',
+    image: '/images/sensory/dy.JPG',
     description: '담양군 다문화 지원센터에서 다양한 원두를 맛보고 경험하는 시간을 가졌습니다'
   },
   {
     id: 'sc-2024-04',
     title: '봄의 향기를 담은 커피',
     date: '2024.04.15',
-    image: '../src/assets/sensoryThum.JPG',
+    image: '/images/sensoryThum.JPG',
     description: '꽃향기가 가득한 에티오피아 원두를 중심으로 다양한 커피의 아로마를 탐험했습니다.'
   },
 ];
