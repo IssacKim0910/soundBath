@@ -123,7 +123,7 @@ export default function ServiceDetail() {
         {service.slug !== 'sound-bath' && service.slug !== 'coffee-class' && (
           <div className="mt-16 text-center">
             <Link to="/contact" className="bg-amber-500 text-black font-bold py-3 px-8 rounded-full hover:bg-amber-400 transition-transform duration-300 inline-block">
-              교육 문의하기
+              문의하기
             </Link>
           </div>
         )}

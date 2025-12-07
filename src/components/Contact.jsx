@@ -12,28 +12,29 @@ export default function Contact() {
           <div className="bg-gray-900 p-8 rounded-lg">
             <h3 className="text-2xl font-semibold mb-2 text-amber-400">Email Us</h3>
             <p className="text-gray-400 mb-4">프로젝트 및 파트너십 문의</p>
-            <a href="mailto:contact@spotlightcoffee.com" className="text-lg text-white hover:text-amber-500 transition-colors break-all">
+            <a className="text-lg text-white">
               spotlightcoffee77@naver.com
             </a>
           </div>
 
           <div className="bg-gray-900 p-8 rounded-lg">
             <h3 className="text-2xl font-semibold mb-2 text-amber-400">Call Us</h3>
-            <p className="text-gray-400 mb-4">교육 및 컨설팅 유선 상담</p>
-            <a href="tel:010-1234-5678" className="text-lg text-white hover:text-amber-500 transition-colors">
+            <p className="text-gray-400 mb-4">제안 및 프로그램 상담</p>
+            <a className="text-lg text-white">
               010-1234-5678
             </a>
           </div>
 
         </div>
 
-        <div className="mt-20 pt-10 border-t border-gray-800 text-gray-500">
-            <h3 className="text-xl font-semibold mb-2 text-amber-400">Location & Hours</h3>
-            <p>전라남도 담양군 대전면 병풍로 189</p>
-            <p>상담 가능 시간: 평일 11:00 AM - 21:00 PM</p>
+        <div className="mt-20 pt-10 border-t border-gray-800">
+            <h3 className="text-xl font-semibold mb-4 text-amber-400">Location & Hours</h3>
+            <p className="text-gray-500">전라남도 담양군 대전면 병풍로 189</p>
+            <p className="text-gray-500">상담 가능 시간: 평일 11:00 AM - 21:00 PM</p>
         </div>
 
       </div>
     </div>
   );
 }
+

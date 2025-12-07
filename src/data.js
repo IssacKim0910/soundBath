@@ -46,31 +46,31 @@ export const servicesData = [
     slug: 'events',
     title: '행사',
     image: 'https://placehold.co/1200x800/676767/FFFFFF/png?text=Events',
-    description: 'Join our community for special events, from live music nights to poetry readings and seasonal celebrations. There is always something happening here.'
+    description: ['스포트라이트에서 진행되는 다양한 행사'], //
   }
 ];
 
 export const soundBathHistoryData = [
   {
     id: 'sb-2024-08',
-    title: '여름밤의 사운드배스',
+    title: '사운드배스',
     date: '2024.08.15',
     image: '/images/night.jpg',
     description: '한여름 밤, 시원한 공간에서 진행된 사운드배스 세션입니다.'
   },
   {
     id: 'sb-2023-09',
-    title: '봄의 소리, 마음의 울림',
+    title: '사운드배스',
     date: '2023.09.27',
     image: '/images/soundBath/sb230927.jpg',
     description: '새로운 시작을 응원하는 봄 시즌 특별 사운드배스입니다.'
   },
   {
     id: 'sb-2024-02',
-    title: '겨울의 끝, 새로운 시작',
+    title: '사운드배스',
     date: '2023.10.03',
     image: '/images/soundBath/sb231003.JPG',
-    description: '겨우내 움츠렸던 몸과 마음을 깨우는 시간을 가졌습니다.'
+    description: '겨울내 움츠렸던 몸과 마음을 깨우는 시간을 가졌습니다.'
   },
 ];
 
